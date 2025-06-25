@@ -15,12 +15,6 @@
 
 ---
 
-## 📸 Demo
-
-![LinguaConnect UI Screenshot](#) <!-- (Add screenshot URL or local path if needed) -->
-
----
-
 ## 🛠️ Installation
 
 1. **Clone the repository**
