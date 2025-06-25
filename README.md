@@ -43,11 +43,6 @@
 - `torch`
 - `streamlit`
 
-You can generate the `requirements.txt` with:
-```bash
-pip freeze > requirements.txt
-```
-
 ---
 
 ## 🌐 Supported Languages
