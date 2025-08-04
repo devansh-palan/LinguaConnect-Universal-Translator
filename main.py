@@ -12,7 +12,6 @@ def load_model_and_tokenizer():
     model = model.to(device)
     return tokenizer, model, device
 
-# 🟡 Force model to load immediately with spinner
 with st.spinner("Loading model... This may take a few seconds."):
     tokenizer, model, device = load_model_and_tokenizer()
 
