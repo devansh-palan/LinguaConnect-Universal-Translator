@@ -2,12 +2,12 @@ from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
 import torch
 import streamlit as st
 
-model_name = "facebook/mbart-large-50-many-to-many-mmt"
+MODEL_PATH = "./mbart_local"
 
 @st.cache_resource
 def load_model_and_tokenizer():
-    tokenizer = MBart50TokenizerFast.from_pretrained(model_name)
-    model = MBartForConditionalGeneration.from_pretrained(model_name)
+    tokenizer = MBart50TokenizerFast.from_pretrained(MODEL_PATH)
+    model = MBartForConditionalGeneration.from_pretrained(MODEL_PATH)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
     return tokenizer, model, device
